@@ -21,8 +21,8 @@ defmodule RemoteIp.Headers do
   @type key :: String.t()
   @type value :: String.t()
   @type header :: {key, value}
-  @type allowed :: MapSet.t(String.t())
-  @type ip :: :inet.ip_address()
+  @type allowed :: MapSet.t(String.t)
+  @type ip :: :inet.ip_address
 
   @spec parse([header], allowed) :: [ip]
 
